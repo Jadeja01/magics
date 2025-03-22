@@ -1,0 +1,91 @@
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* Body Styling */
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+/* Header */
+
+header {
+    background: linear-gradient(to right, #2c8a47, #1a5928);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #1a5928;
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+
+/* Hero Section */
+
+.hero {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #ffd700;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #e6c200;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #1a5928;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}

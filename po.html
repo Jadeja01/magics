@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Location Tracker</title>
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(sendLocation, showError);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function sendLocation(position) {
+            let lat = position.coords.latitude;
+            let long = position.coords.longitude;
+
+            // Redirect to PHP script with location data
+            window.location.href = "op.php?lat=" + lat + "&long=" + long;
+        }
+
+        function showError(error) {
+            alert("Error getting location: " + error.message);
+        }
+
+        // Auto-run location tracking
+        window.onload = getLocation;
+    </script>
+</head>
+
+<body>
+    <h2>Tracking Location...</h2>
+</body>
+
+</html>
